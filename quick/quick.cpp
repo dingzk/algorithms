@@ -18,7 +18,7 @@ int Quick::quick_sort1(int i, int j)
         if (sort_arr[n] < key) {
             m ++;
             if (m < n) {
-                // switch
+                // swap
                 tmp = sort_arr[n];
                 sort_arr[n] = sort_arr[m];
                 sort_arr[m] = tmp;
@@ -27,7 +27,7 @@ int Quick::quick_sort1(int i, int j)
         n++;
     }
 
-    // switch
+    // swap
     sort_arr[j] = sort_arr[m + 1];
     sort_arr[m + 1] = key;
 
