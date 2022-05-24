@@ -34,6 +34,7 @@ int partion(int *arr, int start, int end)
 void quick_sort(int *arr, int start, int end)
 {
 
+    // TODO 注意边界条件
     if (arr == NULL || start >= end) {
         return;
     }
